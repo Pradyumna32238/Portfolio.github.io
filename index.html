@@ -9,7 +9,8 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow-x: hidden; /* Hide horizontal scroll bar */
+             /* Hide horizontal scroll bar */
+            background-color: #060407;
         }
 
         body::before {
@@ -19,8 +20,8 @@
             right: 0;
             bottom: 0;
             left: 0;
-            z-index: -1; /* Place behind other content */
-            background-image: url('https://drive.google.com/uc?id=18zgoYAXTs-0juhNXdRZoNg-4vTma0hLs');
+            z-index: 1; /* Place behind other content */
+            background-image: url('images/background.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -111,6 +112,31 @@
             width: 25%; /* Adjusted width to 25% */
             border-top-left-radius: 10px;
             z-index: 1;
+        }
+
+         /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+         @media (max-width: 768px) {
+            .name {
+                font-size: 28px; /* Adjust the font size for smaller screens */
+             }
+
+            .container {
+                width: 90%; /* Adjusted container width for smaller screens */
+                left: 5%; /* Adjusted container position for smaller screens */
+            }
+
+            h1 {
+                font-size: 30px; /* Adjusted font size for smaller screens */
+                margin-top: 1em; /* Adjusted margin for smaller screens */
+            }
+
+            h2 {
+                font-size: 24px; /* Adjusted font size for smaller screens */
+            }
+
+            p {
+                width: 90%; /* Adjusted text width for smaller screens */
+            }
         }
     </style>
     <script>
