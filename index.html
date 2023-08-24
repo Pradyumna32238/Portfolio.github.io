@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" href="images/logo.png" type="image/png">
     <style>
         /* Reset margin and padding for html and body elements */
         html, body {
@@ -122,7 +123,7 @@
 
             .container {
                 width: 90%; /* Adjusted container width for smaller screens */
-                left: 5%; /* Adjusted container position for smaller screens */
+                left: 10%; /* Adjusted container position for smaller screens */
             }
 
             h1 {
@@ -136,6 +137,10 @@
 
             p {
                 width: 90%; /* Adjusted text width for smaller screens */
+            }
+
+            body::before {
+            background-attachment: fixed;
             }
         }
     </style>
@@ -155,7 +160,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Hi, I am <span class="name">YESHWANTH(Pradyumna)</span></h1>
+        <h1>Hi, I am <span class="name">YESHWANTH<span style="color:white; font-weight: lighter;">(</span>Pradyumna<span style="color: white; font-weight: lighter;">)</span></span></h1>
         <br>
         <h2 style="color: #ff0000;">About</h2>
         <p>
